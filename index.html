@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>❤ أحبك يا SHOSHO ❤</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ❤️ خلفية قلوب متحركة -->
+  <canvas id="hearts-canvas"></canvas>
+
+  <!-- ======================= شاشة الباسورد ======================= -->
+  <div id="lock-screen">
+    <div class="lock-card">
+      <div class="lock-heart">💖</div>
+      <h1>MY LOVE 💕</h1>
+      <p class="lock-subtitle">هذا المكان مخصوص لقلب واحد بس... 👇</p>
+      <input
+        type="password"
+        id="password-input"
+        placeholder="اكتبي كلمة السر هنا"
+        autocomplete="off"
+        autofocus
+      />
+      <button id="unlock-btn">🔓 افتحي القفل</button>
+      <p id="error-msg" class="error hidden">❌ مش صح يا قمر... جربي تاني 😅</p>
+      <p class="hint">(إشارة: هي 3 كلمات بتقولهم ليكي كل يوم 🤍)</p>
+    </div>
+  </div>
+
+  <!-- ======================= الموقع الرئيسي ======================= -->
+  <div id="main-site" class="hidden">
+    <header class="hero">
+      <div class="hero-badges">
+        <span class="badge">🌹 للأبد </span>
+        <span class="badge">أحبك 😘</span>
+        <span class="badge">✨  هفضل</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="to"> في حب ال 158 سنتي 😘😍😍</span>
+        <span class="name">SHOSHO</span>
+        <span class="floating-heart">💗</span>
+      </h1>
+      <p class="hero-subtitle">يا أجمل حاجة حصلت في حياتي 🌟</p>
+      <button class="music-toggle" id="music-toggle">🎵 شغلي الموسيقى</button>
+         <audio loop controls
+         src="C:\Users\Fannan\Desktop\love7\song\love.mp3"></audio>
+      </div>
+    </header>
+
+    <!-- رسالة حب -->
+    <section class="section love-note reveal">
+      <h2 class="section-title">💌 رسالة ليكي</h2>
+      <div class="note-card">
+        <p>
+          يا قلبي يا قمري يا كل حياتي  يا حبيبتي، كل يوم بحبك أكتر من اللي قبله. أنتي أحلى حاجة
+          كتبها ربنا في حياتي، وأنا مش قادر أتخيل يوم من غيرك.
+        </p>
+        <p class="note-sign">بحبك جدًا... دائمًا وأبدًا 💍</p>
+      </div>
+    </section>
+
+    <!-- 📸 أماكن الصور -->
+    <section class="section gallery reveal">
+      <h2 class="section-title">📸 ذكرياتنا الجميلة</h2>
+      <p class="section-sub">كان نفسي يبقي لينا صور مع بعض 💞💕</p>
+
+      <div class="photo-grid">
+        <div class="photo-slot">
+          <img src="C:\Users\Fannan\Desktop\love7\img\1.jpg" alt="عما نتصور مع بعض 😉" class="photo-img" />
+          <div class="photo-placeholder">🖼️ <span>صورة رقم 1</span><small في حب ال 158 سنتي 😘😘></small></div>
+          <p class="photo-caption"> في حب ال 158 سنتي 😘✨</p>
+        </div>
+        <div class="photo-slot">
+          <img src="C:\Users\Fannan\Desktop\love7\img\2.jpg" alt="هستني صورتنا مع بعض بقا ❤️" class="photo-img" />
+          <div class="photo-placeholder">🖼️ <span>صورة رقم 2</span><small>حطّي صورتنا هنا</small></div>
+          <p class="photo-caption"> مستني صورتنا مع بعض بقا  😍</p>
+        </div>
+        <div class="photo-slot">
+          <img src="C:\Users\Fannan\Desktop\love7\img\3.jpg" alt="صورة لنا 4" class="photo-img" />
+          <div class="photo-placeholder">🖼️ <span>صورة رقم 4</span><small>حطّي صورتنا هنا</small></div>
+          <p class="photo-caption"> سيبك من صورتي ملهاش علاقة 😂😂</p>
+        </div>
+        
+          <p class="photo-caption">أجمل قصة حب 📖</p>
+        </div>
+      </div>
+
+      <div class="add-more">
+        <button id="add-slot-btn">➕ ضيفي مكان صورة زيادة</button>
+      </div>
+    </section>
+
+    <!-- ليه بحبك -->
+    <section class="section reasons reveal">
+      <h2 class="section-title">💘 ليه بحبك يا شوشو؟</h2>
+      <div class="reasons-list">
+        <div class="reason-card">لأن ضحكتك بتفتح الدنيا 😊</div>
+        <div class="reason-card">لأن قلبك أبيض وطيب 🤍</div>
+        <div class="reason-card">لأنك بتفهميني من غير كلام 💬</div>
+        <div class="reason-card">لأنك أحلى حاجة في عيني 👀</div>
+        <div class="reason-card">لأن وجودك بيطمني 🏡</div>
+        <div class="reason-card">لأنك أنتي... ببساطة SHOSHO 💖</div>
+      </div>
+    </section>
+
+    <!-- عداد الوقت -->
+    <section class="section counter reveal">
+      <h2 class="section-title">⏳ واحنا سوى</h2>
+      <div class="counter-box">
+        <span class="love-sign">أنا و شوشو حبنا مستمر من</span>
+        <input type="date" id="start-date" class="date-input" />
+        <div class="counter-grid">
+          <div class="counter-item"><span id="days">0</span><small>يوم</small></div>
+          <div class="counter-item"><span id="hours">0</span><small>ساعة</small></div>
+          <div class="counter-item"><span id="minutes">0</span><small>دقيقة</small></div>
+          <div class="counter-item"><span id="seconds">0</span><small>ثانية</small></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>صنع بـ ❤️ كله خصيصًا لـ SHOSHO</p>
+      <p class="tiny">I LOVE YOU • I LOVE YOU • I LOVE YOU</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
